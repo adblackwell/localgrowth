@@ -1,0 +1,48 @@
+citHeader("To cite {localgrowth} in publications please cite the following publications for which the code was developed and which outline the development of the Tsimane and Shuar references (if you use the CDC or WHO references please also cite them appropriately):")
+
+citEntry(entry = "Article",
+  title        = "Growth references for Tsimane forager-horticulturalists of the Bolivian Amazon",
+  author       = personList(as.person("Aaron D Blackwell"),
+                   as.person("Samual S Urlacher"),
+                   as.person("Bret Beheim"),
+                   as.person("Christopher von Rueden"),
+                   as.person("Adrian Jaeggi"),
+                   as.person("Jonathan Stieglitz"),
+                   as.person("Benjamin C Trumble"),
+                   as.person("Michael Gurven"),
+                   as.person("Hillard Kaplan")
+                   ),
+  journal      = "American Journal of Physical Anthropology",
+  year         = "2017",
+  volume       = "162",
+  number       = "3",
+  pages        = "441--461",
+  url          = "http://doi.wiley.com/10.1002/ajpa.23128",
+  doi          = "10.1002/ajpa.23128"",
+
+  textVersion  =
+  paste("Blackwell, AD, Urlacher, SS, Beheim, B, von Rueden, C, Jaeggi, A, Stieglitz, J, Tumble, BC, Gurven, MD, Kaplan, H. (2017). Growth references for Tsimane forager-horticulturalists of the Bolivian Amazon, American Journal of Physical Anthropology. 162(3) 441-461. DOI: 10.1002/ajpa.23128")
+)
+
+citEntry(entry = "Article",
+  title        = "Physical Growth of the Shuar: Height, Weight, and BMI Growth References for an Indigenous Amazonian Population",
+  author       = personList(as.person("Samual S Urlacher"),
+                    as.person("Aaron D Blackwell"),
+                    as.person("Melissa A Liebert"),
+                    as.person("Felicia C Madimenos"),
+                    as.person("Tara J Cepon-Robins"),
+                    as.person("Theresa E Gildner"),
+                    as.person("J Josh Snodgrassl"),
+                    as.person("Lawrence S Sugiyama"),
+                   ),
+  journal      = "American Journal of Human Biology",
+  year         = "2016",
+  volume       = "28",
+  number       = "1",
+  pages        = "13--30",
+  url          = "http://doi.wiley.com/10.1002/ajhb.22747",
+  doi          = "10.1002/ajhb.22747"",
+
+  textVersion  =
+  paste("Urlacher, SS, Blackwell, AD, Liebert, MA, Madimenos, FC, Cepon-Robins, TJ, Gildner, TE, Snodgrass, JJ, Sugiyama, LS. (2016) Physical Growth of the Shuar: Height, Weight, and BMI Growth References for an Indigenous Amazonian Population, American Journal of Human Biology, 28(1): 16-30. DOI: 10.1002/ajhb.22747.")
+)

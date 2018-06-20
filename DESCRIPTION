@@ -1,0 +1,23 @@
+Package: localgrowth
+Type: Package
+Title: Calculates Z-scores From LMS Files for local growth references
+Version: 0.1.0
+Authors@R: person("Aaron", "Blackwell", email = "aaron.blackwell@wsu.edu",
+  role = c("aut", "cre"))
+Maintainer: Aaron D. Blackwell <aaron.blackwell@wsu.edu>
+Description: Provides functions to calculate z-scores and centile values for 
+    measurements of height, weight, and BMI based on both widely used growth 
+    standards and references (CDC, WHO) and references from other populations,
+    including the Tsimane and Shuar indigenous groups of Bolivia and Ecuador.
+Citation: 
+Depends: R (>= 3.1.0),
+    stats
+URL: http://www.anth.ucsb.edu/faculty/blackwell
+BugReports: https://github.com/yihui/knitr/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
