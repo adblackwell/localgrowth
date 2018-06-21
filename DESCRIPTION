@@ -12,8 +12,8 @@ Description: Provides functions to calculate z-scores and centile values for
 Citation: 
 Depends: R (>= 3.1.0),
     stats
-URL: http://www.anth.ucsb.edu/faculty/blackwell
-BugReports: https://github.com/yihui/knitr/issues
+URL: https://github.com/adblackwell/localgrowth
+BugReports: https://github.com/adblackwell/localgrowth/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
