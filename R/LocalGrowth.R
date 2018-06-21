@@ -29,6 +29,5 @@ NULL
 
 .onAttach <- function(libname, pkgname) {
   packageStartupMessage(
-"Welcome to localgrowth (version ",utils::packageVersion('localgrowth'),").
-Basic information can be found in help('localgrowth'), with a more detailed walkthrough in vignette('localgrowth'). Type citation('localgrowth') for citation information. You can find the latest version and report issues here: https://github.com/adblackwell/localgrowth. Install the latest version with devtools::install_github('adblackwell/localgrowth')")
+"Welcome to localgrowth (version ",utils::packageVersion('localgrowth'),"). Basic information can be found in help('localgrowth'), with a more detailed walkthrough in vignette('localgrowth'). Type citation('localgrowth') for citation information. You can find the latest version and report issues here: https://github.com/adblackwell/localgrowth. Install the latest version with devtools::install_github('adblackwell/localgrowth')")
 }
