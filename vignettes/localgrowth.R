@@ -4,6 +4,10 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
+## ----eval=FALSE----------------------------------------------------------
+#  install.packages('devtools')
+#  devtools::install_github('adblackwell/localgrowth',build_vignettes = TRUE)
+
 ## ------------------------------------------------------------------------
 library(localgrowth)
 data(TsimaneData)

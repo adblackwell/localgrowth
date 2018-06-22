@@ -12,7 +12,7 @@
 
 <meta name="author" content="Aaron D. Blackwell" />
 
-<meta name="date" content="2018-06-20" />
+<meta name="date" content="2018-06-21" />
 
 <title>Calulating growth z-scores</title>
 
@@ -70,12 +70,19 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Calulating growth z-scores</h1>
 <h4 class="author"><em>Aaron D. Blackwell</em></h4>
-<h4 class="date"><em>2018-06-20</em></h4>
+<h4 class="date"><em>2018-06-21</em></h4>
 
 
 
 <p>The <strong>localgrowth</strong> package provides functions to calculate z-scores and centile values for measurements of height, weight, and BMI based on both widely used growth standards and references (CDC, WHO) and references from other populations. The included LMS files are for calculating height-for-age, weight-for-age, BMI-for-age, and weight-for-height z-scores.</p>
 <p>The primary function for <strong>localgrowth</strong> is <code>growthRef</code>, which provides an interface for calcualting z-scores or centiles from one or more growth references. Other functions include <code>centilesLMS</code> which generates centile tables for reference or plotting, and <code>ZfromLMS</code> which does simple calculations from LMS values.</p>
+<div id="installing-localgrowth-and-reporting-bugs" class="section level2">
+<h2>Installing localgrowth and reporting bugs</h2>
+<p><strong>localgrowth</strong> can be installed directly from github. If <strong>devtools</strong> is already installed the first line can be skipped:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">'devtools'</span>)
+devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">'adblackwell/localgrowth'</span>,<span class="dt">build_vignettes =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<p>Bug reports can also be filed on github, at <a href="https://github.com/adblackwell/localgrowth/issues" class="uri">https://github.com/adblackwell/localgrowth/issues</a>.</p>
+</div>
 <div id="included-growth-standards-and-references" class="section level2">
 <h2>Included growth standards and references</h2>
 <p>Four sets of references/standards are currently including in <strong>localgrowth</strong>. These include references for the Tsimane and Shuar indigenous groups of Bolivia and Ecuador, which were developed as population specific references, but may be useful for other South American populations. See the papers under the <a href="#references">References</a> section for further details on the development and use of these references.</p>

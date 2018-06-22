@@ -20,6 +20,14 @@ The **localgrowth** package provides functions to calculate z-scores and centile
 
 The primary function for **localgrowth** is `growthRef`, which provides an interface for calcualting z-scores or centiles from one or more growth references. Other functions include `centilesLMS` which generates centile tables for reference or plotting, and `ZfromLMS` which does simple calculations from LMS values.
 
+##Installing localgrowth and reporting bugs
+**localgrowth** can be installed directly from github. If **devtools** is already installed the first line can be skipped:
+```{r eval=FALSE}
+install.packages('devtools')
+devtools::install_github('adblackwell/localgrowth',build_vignettes = TRUE)
+```
+Bug reports can also be filed on github, at https://github.com/adblackwell/localgrowth/issues.
+
 ##Included growth standards and references
 Four sets of references/standards are currently including in **localgrowth**. These include references for the Tsimane and Shuar indigenous groups of Bolivia and Ecuador, which were developed as population specific references, but may be useful for other South American populations. See the papers under the [References](#references) section for further details on the development and use of these references.
 

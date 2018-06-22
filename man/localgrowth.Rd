@@ -11,6 +11,11 @@ measurements of height, weight, and BMI based on both widely used growth
 standards and references (CDC, WHO) and references from other populations,
 including the Tsimane and Shuar indigenous groups of Bolivia and Ecuador.
 }
+\section{Documentation}{
+
+View the [vignette here](../doc/localgrowth.html).
+}
+
 \section{localgrowth functions}{
 
 The primary function for \code{localgrowth} is \code{\link{growthRef}}, which provides an interface for calcualting z-scores or centiles from one or more growth references. Other functions include \code{\link{centilesLMS}} which generates centile tables for reference or plotting, and \code{\link{ZfromLMS}} which does simple calculations from LMS values. Other variants of these functions are documented on their respective help pages.
