@@ -13,7 +13,7 @@ including the Tsimane and Shuar indigenous groups of Bolivia and Ecuador.
 }
 \section{Documentation}{
 
-View the [vignette here](../doc/localgrowth.html).
+View available vignettes with: \code{browseVignettes("localgrowth")}
 }
 
 \section{localgrowth functions}{
