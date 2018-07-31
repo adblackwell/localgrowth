@@ -1,7 +1,7 @@
 Package: localgrowth
 Type: Package
 Title: Calculates Z-scores From LMS Files for local growth references
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Aaron", "Blackwell", email = "aaron.blackwell@wsu.edu",
   role = c("aut", "cre"))
 Maintainer: Aaron D. Blackwell <aaron.blackwell@wsu.edu>

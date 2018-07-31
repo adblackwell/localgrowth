@@ -75,7 +75,7 @@ getCentile<-function(x, y, sex, LMS, method=c("fmm", "periodic", "natural", "mon
 #'
 #' Functions to calculates Z-scores from one or more growth references. \code{growthRef} provides an interface for indicating the desired LMS reference and passing growth data to \code{getZ}. \code{getZ} and \code{getCentile} calculate z-scores or centiles from child growth references provided in LMS format.
 #'
-#' \code{growthRef} returns Z-scores calculated from lambda, mu, sigma (LMS) tables from various sources. \code{growthRef} acts as a wrapper that selects the appropriate LMS tables and passes them to \code{getZ} to calculate z-scores. At present, \code{growthRef} can provide z-scores based on four different growth references: the Tsimane, an indigenous group of Bolivia, the Shuar, an indigenous group of Ecuador, and references or standards from the US Center for Disease Control (CDC) and the World Health Organization (WHO). Internal LMS tables are typically referenced indirectly by \code{growthRef}, but can be referenced directly by \code{pop.type}, i.e. \code{Tsimane.Height}. See below for relevant citations and ranges for each growth reference.
+#' \code{growthRef} returns Z-scores calculated from lambda, mu, sigma (LMS) tables from various sources. \code{growthRef} acts as a wrapper that selects the appropriate LMS tables and passes them to \code{getZ} to interpolate LMS values and calculate z-scores at the exact age or height specified. At present, \code{growthRef} can provide z-scores based on four different growth references: the Tsimane, an indigenous group of Bolivia, the Shuar, an indigenous group of Ecuador, and references or standards from the US Center for Disease Control (CDC) and the World Health Organization (WHO). Internal LMS tables are typically referenced indirectly by \code{growthRef}, but can be referenced directly by \code{pop.type}, i.e. \code{Tsimane.Height}. See below for relevant citations and ranges for each growth reference.
 #'
 #' \strong{Valid x-value ranges for included references and standards}
 #' \tabular{lcccc}{
@@ -108,7 +108,7 @@ getCentile<-function(x, y, sex, LMS, method=c("fmm", "periodic", "natural", "mon
 #' \url{http://www.who.int/childgrowth/en/}. \url{http://www.who.int/growthref/en/}.
 #'
 #' @param x a single value or vector of either ages in years or height in cm at which to calcuate Z-scores, or the name of a column or item in \code{data}.
-#' @param y a single value or vector of measures (heights, weights, BMIs) to be converted to Z-scores, or the name of a column or item in \code{data}.
+#' @param y a single value or vector of measures (heights, weights, BMIs) to be converted to Z-scores, or the name of a column or item in \code{data}. For included LMS references, height should be in cm, weight in kg, and BMI in kg/m^2.
 #' @param sex a single value or vector of sexes, or the name of a column or item in \code{data}. Sex must be coded for males/females as 1/0, 1/2, 'm'/'f', 'M'/'F', 'Male'/'Female', or 'male'/'female'.
 #' @param data an optional data frame or list containing x, y, or sex.
 #' @param type a string indicating the type of Z-score to calculate, corresponding to the measures in x and y. Either "Weight","Height","BMI", or "WFH", indicating weight-for-age, height-for-age, BMI-for-age, or weight-for-height.
