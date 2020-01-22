@@ -3,7 +3,6 @@
 \docType{package}
 \name{localgrowth}
 \alias{localgrowth}
-\alias{localgrowth-package}
 \title{localgrowth: Calculates Z-scores From LMS Files for local growth references.}
 \description{
 Provides functions to calculate z-scores and centile values for

@@ -170,8 +170,8 @@ growthRef<-function(x, y, sex, data, type=c("Weight","Height","BMI","WFH"), pop=
 
   allzs<-data.frame(sapply(LMSfiles,function(LMSf) if(exists(LMSf)) getZ(x,y,sex,get0(LMSf),method,rule) else rep(NA,length(x))))
 
-  if(z=="Centile"){
-    allzs<-pnorm(allzs)
+  if(z=="centile"){
+    allzs<-data.frame(lapply(HFA,pnorm))
     names(allzs)<-paste0("Centile.",names(allzs))
   } else names(allzs)<-paste0("Z.",names(allzs))
 

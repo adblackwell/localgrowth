@@ -5,12 +5,24 @@
 \alias{centilesLMS}
 \title{Interpolate Centile or LMS tables}
 \usage{
-getLMS(x, sex, LMS, xname = "x", method = c("fmm", "periodic", "natural",
-  "monoH.FC", "hyman", "linear", "constant"), rule = 1)
+getLMS(
+  x,
+  sex,
+  LMS,
+  xname = "x",
+  method = c("fmm", "periodic", "natural", "monoH.FC", "hyman", "linear", "constant"),
+  rule = 1
+)
 
-centilesLMS(x, sex, LMS, cent = c(0.02, 0.05, 0.25, 0.5, 0.75, 0.95, 0.98),
-  xname = "x", method = c("fmm", "periodic", "natural", "monoH.FC", "hyman",
-  "linear", "constant"), rule = 1)
+centilesLMS(
+  x,
+  sex,
+  LMS,
+  cent = c(0.02, 0.05, 0.25, 0.5, 0.75, 0.95, 0.98),
+  xname = "x",
+  method = c("fmm", "periodic", "natural", "monoH.FC", "hyman", "linear", "constant"),
+  rule = 1
+)
 }
 \arguments{
 \item{x}{a single value or vector of either ages in years or height in cm at which to interpolate LMS of centile values.}

@@ -6,21 +6,41 @@
 \alias{growthRef}
 \title{Calculate Z-scores from growth references}
 \usage{
-getZ(x, y, sex, LMS, method = c("fmm", "periodic", "natural", "monoH.FC",
-  "hyman", "linear", "constant"), rule = 1)
+getZ(
+  x,
+  y,
+  sex,
+  LMS,
+  method = c("fmm", "periodic", "natural", "monoH.FC", "hyman", "linear", "constant"),
+  rule = 1
+)
 
-getCentile(x, y, sex, LMS, method = c("fmm", "periodic", "natural",
-  "monoH.FC", "hyman", "linear", "constant"), rule = 1)
+getCentile(
+  x,
+  y,
+  sex,
+  LMS,
+  method = c("fmm", "periodic", "natural", "monoH.FC", "hyman", "linear", "constant"),
+  rule = 1
+)
 
-growthRef(x, y, sex, data, type = c("Weight", "Height", "BMI", "WFH"),
-  pop = c("All", "CDC", "WHO", "Tsimane", "Shuar"), LMS = NULL,
-  z = c("zscore", "centile"), method = c("fmm", "periodic", "natural",
-  "monoH.FC", "hyman", "linear", "constant"), rule = 1)
+growthRef(
+  x,
+  y,
+  sex,
+  data,
+  type = c("Weight", "Height", "BMI", "WFH"),
+  pop = c("All", "CDC", "WHO", "Tsimane", "Shuar"),
+  LMS = NULL,
+  z = c("zscore", "centile"),
+  method = c("fmm", "periodic", "natural", "monoH.FC", "hyman", "linear", "constant"),
+  rule = 1
+)
 }
 \arguments{
 \item{x}{a single value or vector of either ages in years or height in cm at which to calcuate Z-scores, or the name of a column or item in \code{data}.}
 
-\item{y}{a single value or vector of measures (heights, weights, BMIs) to be converted to Z-scores, or the name of a column or item in \code{data}.}
+\item{y}{a single value or vector of measures (heights, weights, BMIs) to be converted to Z-scores, or the name of a column or item in \code{data}. For included LMS references, height should be in cm, weight in kg, and BMI in kg/m^2.}
 
 \item{sex}{a single value or vector of sexes, or the name of a column or item in \code{data}. Sex must be coded for males/females as 1/0, 1/2, 'm'/'f', 'M'/'F', 'Male'/'Female', or 'male'/'female'.}
 
@@ -45,7 +65,7 @@ Returns either a data frame with columns corresponding to the requested Z-scores
 Functions to calculates Z-scores from one or more growth references. \code{growthRef} provides an interface for indicating the desired LMS reference and passing growth data to \code{getZ}. \code{getZ} and \code{getCentile} calculate z-scores or centiles from child growth references provided in LMS format.
 }
 \details{
-\code{growthRef} returns Z-scores calculated from lambda, mu, sigma (LMS) tables from various sources. \code{growthRef} acts as a wrapper that selects the appropriate LMS tables and passes them to \code{getZ} to calculate z-scores. At present, \code{growthRef} can provide z-scores based on four different growth references: the Tsimane, an indigenous group of Bolivia, the Shuar, an indigenous group of Ecuador, and references or standards from the US Center for Disease Control (CDC) and the World Health Organization (WHO). Internal LMS tables are typically referenced indirectly by \code{growthRef}, but can be referenced directly by \code{pop.type}, i.e. \code{Tsimane.Height}. See below for relevant citations and ranges for each growth reference.
+\code{growthRef} returns Z-scores calculated from lambda, mu, sigma (LMS) tables from various sources. \code{growthRef} acts as a wrapper that selects the appropriate LMS tables and passes them to \code{getZ} to interpolate LMS values and calculate z-scores at the exact age or height specified. At present, \code{growthRef} can provide z-scores based on four different growth references: the Tsimane, an indigenous group of Bolivia, the Shuar, an indigenous group of Ecuador, and references or standards from the US Center for Disease Control (CDC) and the World Health Organization (WHO). Internal LMS tables are typically referenced indirectly by \code{growthRef}, but can be referenced directly by \code{pop.type}, i.e. \code{Tsimane.Height}. See below for relevant citations and ranges for each growth reference.
 
 \strong{Valid x-value ranges for included references and standards}
 \tabular{lcccc}{
