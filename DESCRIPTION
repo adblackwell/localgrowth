@@ -1,7 +1,7 @@
 Package: localgrowth
 Type: Package
 Title: Calculates Z-scores From LMS Files for local growth references
-Version: 0.1.1
+Version: 0.1.2.9000
 Authors@R: person("Aaron", "Blackwell", email = "aaron.blackwell@wsu.edu",
   role = c("aut", "cre"))
 Maintainer: Aaron D. Blackwell <aaron.blackwell@wsu.edu>
@@ -17,7 +17,7 @@ BugReports: https://github.com/adblackwell/localgrowth/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 7.0.2
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
